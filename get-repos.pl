@@ -11,7 +11,7 @@ my $gh = Net::GitHub->new(
         access_token => $ENV{'GH_TOKEN'} # from above
 			     );
 
-my $place = shift || "Almería";
+my $place = shift || "Huelva";
 my $dir = shift || "../top-github-users-data/data";
 
 my @data = read_lines( "$dir/user-data-$place.csv" );
